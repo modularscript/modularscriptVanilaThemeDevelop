@@ -1,0 +1,118 @@
+/*=============================================
+=                Colors                       =
+=============================================*/
+
+$dark-mode:                       #181a1b;
+$light-mode:                      #f9f9f9;
+
+//** Border color
+// -----------------------------
+$color-border:                    #3a3a3a;
+$color-border-1:                  #efefef;
+
+
+// ** Background color
+// -----------------------------
+$body-bg:                         $light-mode!default;
+$header-bg:                       $light-mode!default;
+$color-header:                    #474747;
+$color-select:                    #f15a17;
+$color-white:                     #f8f8ff;
+
+$page-offset:                     5px;
+
+
+
+$light-color :                    #FFF !default;
+$dark-color :                     #000 !default;
+$accent-color :                   #f00 !default;
+
+$gray-base:                       $gray !default;
+$gray-dark:                       #5f5f5f !default;
+$gray-light:                      #373a41 !default;
+$black-base:                      $black !default;
+$black-dark:                      darken($black, 80%);
+$black-light:                     lighten($black, 80%);
+$white-base:                      $white !default;
+$white-dark:                      darken($white, 80%);
+$white-light:                     lighten($white, 80%);
+$red-base:                        $red !default;
+$red-dark:                        darken($red, 80%);
+$red-light:                       lighten($red, 80%);
+
+/*=============================================
+=               Typography                   =
+=============================================*/
+//** fonts family style
+// -----------------------------
+$font-main:                       'Segoe UI';
+$font-path:                       '../fonts/segoeui';
+$font-family-segoe-ui:            $font-name, Arial, sans-serif !default;
+$font-style-italic:               italic;
+$font-smoothing:                  always;
+
+//** Font weights
+// -----------------------------
+$font-weight-lightest:            100;
+$font-weight-light:               200;
+$font-weight-thin:                300;
+$font-weight-normal:              400;
+$font-weight-regular:             500;
+$font-weight-medium:              600;
+$font-weight-bold:                700;
+$font-weight-bolder:              800;
+$font-weight-boldest:             900;
+
+// font all over && link color
+// -----------------------------
+$link-font-color:                 #444444 !default;
+$link-color:                      #d04526 !default;
+$link-hover-color:                #c03d20 !default;
+$link-background-color:           $gray-light !default;
+
+$nav-font-color:                  #444444 !default;
+$nav-link-color:                  #d04526 !default;
+$nav-link-hover-color:            #c03d20 !default;
+$nav-link-background-color: $gray-light !default;
+
+$section-header-font-color:       #444444 !default;
+$section-header-link-color:       #d04526 !default;
+$section-header-link-hover-color: #c03d20 !default;
+
+$color-font-main:                 #0c0808;
+$body-font-color:                 #555555 !default;
+$body-link-color:                 #d04526 !default;
+$body-link-hover-color:           #c03d20 !default;
+
+$footer-font-color:               #555555 !default;
+$footer-link-color:               #d04526 !default;
+$footer-link-hover-color:         #c03d20 !default;
+
+
+
+/*=============================================
+=       Responsive  Using min-width           =
+=============================================*/
+
+// Small devices (landscape phones, 576px and up)
+$screen-small:                    576px;
+// Medium devices (tablets, 768px and up)
+$screen-medium:                   768px;
+// Large devices (desktops, 992px and up)
+$screen-large:                    992px;
+// Extra large devices (large desktops, 1200px and up)
+$screen-extra-large:              1200px;
+
+/*=============================================
+=       Responsive  Using max-width           =
+=============================================*/
+
+// Small devices (landscape phones, 576px and up)
+$screen-max-small:                575.98px;
+// Medium devices (tablets, 768px and up)
+$screen-max-medium:               767.98px;
+// Large devices (desktops, 992px and up)
+$screen-max-large:                991.98px;
+// Extra large devices (large desktops, 1200px and up)
+$screen-max-extra-large:          1199.98px;
+

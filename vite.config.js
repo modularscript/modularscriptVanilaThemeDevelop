@@ -12,6 +12,8 @@ export default defineConfig({
 			scss: {
 				// If you have a variables file, uncomment and adjust the path:
 				// additionalData: `@use "@/_sass/variables.scss" as *;`
+				silenceDeprecations: ["legacy-js-api"],
+				api: 'modern-compiler'
 			}
 		}
 	},
