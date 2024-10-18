@@ -1,13 +1,36 @@
 import { defineConfig } from 'vite'
-import sass from 'sass'
+import { resolve } from 'path'
 
 export default defineConfig({
-	silenceDeprecations: ['legacy-js-api'],
+	resolve: {
+		alias: {
+			'@': resolve(__dirname, './')
+		}
+	},
 	css: {
 		preprocessorOptions: {
 			scss: {
-				implementation: sass
+				// If you have a variables file, uncomment and adjust the path:
+				// additionalData: `@use "@/_sass/variables.scss" as *;`
 			}
 		}
+	},
+	build: {
+		minify: 'terser',
+		terserOptions: {
+			compress: {
+				drop_console: true,
+				drop_debugger: true
+			}
+		},
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, 'index.html')
+			}
+		}
+	},
+	server: {
+		port: 3000,
+		open: true
 	}
 })
